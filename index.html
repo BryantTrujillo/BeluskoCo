@@ -19,7 +19,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarPrimary">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarPrimary">
+            <div class="offcanvas offcanvas-end border-light" tabindex="-1" id="navbarPrimary">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title"></h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -27,17 +27,39 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">Home</a>
                             <!-- <i class="bi bi-house"></i> -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./about.html">About</a>
                             <!-- <i class="bi bi-question-lg"></i> -->
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Brands</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarBrandsDropdown" role="button" data-bs-toggle="dropdown">
+                              Brands
+                            </a>
                             <!-- <i class="bi bi-star"></i> -->
-                        </li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarBrandsDropdown">
+                                <li><a class="dropdown-item" href="#">2M Technology, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">Adept Audio</a></li>
+                                <li><a class="dropdown-item" href="#">Blustream, Ltd.</a></li>
+                                <li><a class="dropdown-item" href="#">CaP America</a></li>
+                                <li><a class="dropdown-item" href="#">DataComm Electronics</a></li>
+                                <li><a class="dropdown-item" href="#">George Risk Industries, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">LKG Industries, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">Labor Saving Devices, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">OhmKat, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">PanaVise Products, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">Pan Pacific Enterprise Co., Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">Selecta Products, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">Simply45, LLC</a></li>
+                                <li><a class="dropdown-item" href="#">Techflex, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">ToughDog Security Systems</a></li>
+                                <li><a class="dropdown-item" href="#">Universal Power Group, Inc.</a></li>
+                                <li><a class="dropdown-item" href="#">Video Mount Products</a></li>
+                                <li><a class="dropdown-item" href="#">Xuron Corp.</a></li>
+                            </ul>
+                          </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                             <!-- <i class="bi bi-envelope"></i> -->
@@ -106,9 +128,9 @@
                     <div class="row">
                         <div class="offset-md-1 col-md-4 mb-3">
                             <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a class="nav-link p-0" href="./index.html">Home</a></li>
-                                <li class="nav-item mb-2"><a class="nav-link p-0" href="#">About</a></li>
-                                <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Brands</a></li>
+                                <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Home</a></li>
+                                <li class="nav-item mb-2"><a class="nav-link p-0" href="./about.html">About</a></li>
+                                <li class="nav-item mb-2"><a class="nav-link p-0" href="./brands.html">Brands</a></li>
                                 <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Contact</a></li>
                             </ul>
                         </div>
