@@ -11,6 +11,7 @@
   "author": "Bryant Trujillo",
   "license": "ISC",
   "dependencies": {
+    "anchor-js": "^4.3.1",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.0"
   },
