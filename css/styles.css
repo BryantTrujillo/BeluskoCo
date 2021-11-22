@@ -1,11 +1,8 @@
 :target {
-    scroll-margin-top: 80px;
-  }
+  scroll-margin-top: 80px; }
 
 body {
-    font-family: 'Lato', sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Fugaz One', cursive;
-}
+  font-family: 'Fugaz One', cursive; }

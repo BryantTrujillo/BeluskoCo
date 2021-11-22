@@ -7,18 +7,22 @@
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "watch:all": "parallelshell 'npm run lite'",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin brands.html -d dist --htmlmin -o dist/brands.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss"
   },
   "author": "Bryant Trujillo",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.7.0"
+    "bootstrap-icons": "^1.7.0",
+    "node-sass": "^6.0.1",
+    "uglify-js": "^3.14.3"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
