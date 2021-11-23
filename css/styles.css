@@ -2,10 +2,22 @@
   scroll-margin-top: 80px; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Fugaz One', cursive; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fugaz One", cursive; }
 
 .logoLightMin {
   height: 24px; }
+
+.navbar {
+  background-color: #dbe2ef; }
+
+header {
+  background-color: #112d4e; }
+
+footer {
+  background-color: #f9f7f7; }
+
+.card-title {
+  color: #3f72af; }

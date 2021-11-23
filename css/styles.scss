@@ -1,15 +1,39 @@
+$first-color: #112d4e;
+$second-color: #3f72af;
+$third-color: #dbe2ef;
+$fourth-color: #f9f7f7;
+
+$header-font: 'Fugaz One', cursive;
+$body-font: 'Lato', sans-serif;
+
 :target {
     scroll-margin-top: 80px;
   }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: $body-font;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Fugaz One', cursive;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
 }
 
 .logoLightMin {
     height: 24px;
+}
+
+.navbar {
+    background-color: $third-color;
+}
+
+header {
+    background-color: $first-color;
+}
+
+footer {
+    background-color: $fourth-color;
+}
+
+.card-header {
+    color: $second-color;
 }
