@@ -19,5 +19,11 @@ header {
 footer {
   background-color: #f9f7f7; }
 
-.card-title {
+.card {
+  height: 350px; }
+
+.card-header {
   color: #3f72af; }
+
+.navbar-toggler {
+  background-color: #f9f7f7; }
