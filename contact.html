@@ -119,7 +119,7 @@
                 </div>
                 <div class="d-none d-md-block col-md-6 py-5 mb-0">
                     <h2>Manufacturers' representative</h2>
-                    <h5>based in the Pacific Northwest</h5>
+                    <h5>serving the Pacific Northwest</h5>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
         <div class="container">
             <div class="row row-content py-3">
                 <div class="col-12">
-                    <h2>Get in touch</h2>
+                    <h3 id="headerText">Get in touch</h3>
                     <hr />
                 </div>
                 <div class="col-12 offset-md-1 col-md-6 col-lg-4 pt-1">
@@ -185,7 +185,7 @@
 
             <div class="row row-content py-3">
                 <div class="col-12">
-                    <h2>Send a note</h2>
+                    <h3 id="headerText">Send a note</h3>
                     <hr />
                 </div>
                 <div class="offset-md-1 col-md-10">
@@ -243,22 +243,22 @@
                         <div class="offset-md-1 col-md-3 mb-3">
                             <ul class="nav flex-column">
                                 <li class="nav-item mb-2">
-                                    <a class="nav-link p-0" href="./index.html">
+                                    <a class="nav-link p-0 active" href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true" title="<i class='bi bi-house'></i>">
                                         <h6>Home</h6>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a class="nav-link p-0 disabled" href="./about.html">
+                                    <a class="nav-link p-0 disabled" href="./about.html" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true" title="<i class='bi bi-person'></i>">
                                         <h6>About</h6>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a class="nav-link p-0" href="./brands.html">
+                                    <a class="nav-link p-0" href="./brands.html" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true" title="<i class='bi bi-star'></i>">
                                         <h6>Brands</h6>
                                     </a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a class="nav-link p-0 active" href="#">
+                                    <a class="nav-link p-0" href="./contact.html" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true" title="<i class='bi bi-chat'></i>">
                                         <h6>Contact</h6>
                                     </a>
                                 </li>
@@ -378,6 +378,7 @@
         anchors.add('.card-header > h5');
     </script>
     <script>
+        // Navbar transparency transition
         let nav = document.querySelector('nav');
 
         window.addEventListener('scroll', function() {
@@ -396,6 +397,12 @@
             } else {
                 logo.classList.add('d-none');
             }
+        });
+
+        // Tooltips
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
         });
     </script>
 </body>

@@ -38,3 +38,9 @@ header:after {
   height: 100%;
   opacity: 0.25;
   z-index: -1; }
+
+#oddContent {
+  background-color: #f9f7f7; }
+
+#headerText {
+  color: #112d4e; }

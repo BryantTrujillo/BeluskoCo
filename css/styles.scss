@@ -55,3 +55,11 @@ header:after {
     opacity : 0.25;
     z-index: -1;
 }
+
+#oddContent {
+    background-color: $fourth-color;
+}
+
+#headerText {
+    color: $first-color;
+}
