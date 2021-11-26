@@ -8,7 +8,7 @@ $body-font: 'Lato', sans-serif;
 
 :target {
     scroll-margin-top: 80px;
-  }
+}
 
 body {
     font-family: $body-font;
@@ -20,15 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .logoLightMin {
     height: 24px;
-}
-
-.navbar {
-    background-color: $third-color;
-//  background: transparent !important;
-}
-
-header {
-    background-color: $first-color;
 }
 
 footer {
@@ -43,6 +34,24 @@ footer {
     color: $second-color;
 }
 
-.navbar-toggler {
-    background-color: $fourth-color;
+header {
+    color: $second-color;
+    position: relative;
+    background:none;
+}
+
+header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/ruvim-miksanskiy-4oPcQuMkmco-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.25;
+    z-index: -1;
 }
