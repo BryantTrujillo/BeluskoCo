@@ -9,7 +9,8 @@ import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
 
 // import Footer from './FooterComponent';
-import HomeCarousel from './CarouselComponent';
+import HomeCarousel from '../components/CarouselComponent';
+import Footer from '../components/FooterComponent';
 
 function HomeBody() {
     return(
@@ -70,6 +71,7 @@ export default function Home() {
                 <HomeCarousel />
                 <HomeBody />
             </Container>
+            <Footer />
         </div>
     )
 }
