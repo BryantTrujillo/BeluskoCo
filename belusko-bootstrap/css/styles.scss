@@ -1,0 +1,78 @@
+$first-color: #112d4e;
+$second-color: #3f72af;
+$third-color: #dbe2ef;
+$fourth-color: #f9f7f7;
+
+$header-font: 'Fugaz One', cursive;
+$body-font: 'Lato', sans-serif;
+
+:target {
+    scroll-margin-top: 80px;
+}
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+}
+
+.logoLightMin {
+    height: 24px;
+}
+
+footer {
+    background-color: $third-color;
+}
+
+.card {
+    height: 500px;
+}
+
+.card-header {
+    color: $second-color;
+}
+
+header {
+    color: $second-color;
+    position: relative;
+    background:none;
+}
+
+header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/ruvim-miksanskiy-4oPcQuMkmco-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.25;
+    z-index: -1;
+}
+
+#oddContent {
+    background-color: $fourth-color;
+}
+
+#headerText {
+    color: $first-color;
+}
+
+section {
+    content: "";
+    display: block;
+    background-image: url(../img/luke-southern-ftQrm7D1Rw0-unsplash.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.25;
+    z-index: -1;
+}
