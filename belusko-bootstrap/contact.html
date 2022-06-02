@@ -7,15 +7,16 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 
     <!-- build:css css/main.css -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./contact-form.php" />
     <!-- endbuild -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -371,7 +372,12 @@
             <hr />
           </div>
           <div class="offset-md-1 col-md-10">
-            <form>
+            <form
+              id="form-id"
+              class="form-class"
+              method="post"
+              action="contact-form.php"
+            >
               <div class="form-group row pb-2">
                 <label for="firstName" class="col-md-2 col-form-label"
                   >First name</label
@@ -383,6 +389,7 @@
                     id="firstName"
                     name="firstName"
                     placeholder="First name"
+                    required
                   />
                 </div>
               </div>
@@ -397,14 +404,15 @@
                     id="lastName"
                     name="lastName"
                     placeholder="Last name"
+                    required
                   />
                 </div>
               </div>
               <div class="form-group row pb-2">
-                <label for="areaCode" class="col-md-2 col-form-label"
+                <label for="telNum" class="col-md-2 col-form-label"
                   >Telephone number</label
                 >
-                <div class="col-5 col-md-3">
+                <!-- <div class="col-5 col-md-3">
                   <input
                     type="tel"
                     class="form-control"
@@ -412,13 +420,13 @@
                     name="areaCode"
                     placeholder="Area code"
                   />
-                </div>
-                <div class="col-7">
+                </div> -->
+                <div class="col">
                   <input
                     type="tel"
                     class="form-control"
                     name="telNum"
-                    placeholder="Telephone number"
+                    placeholder="123-456-7890"
                   />
                 </div>
               </div>
@@ -433,6 +441,7 @@
                     id="email"
                     name="email"
                     placeholder="Email address"
+                    required
                   />
                 </div>
               </div>
@@ -446,12 +455,18 @@
                     id="feedback"
                     name="feedback"
                     rows="4"
+                    maxlength="2000"
+                    required
                   ></textarea>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="offset-md-2 col-md-10">
-                  <button type="submit" class="btn btn-outline-primary">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-primary"
+                    disabled
+                  >
                     Submit
                   </button>
                 </div>
